@@ -1,0 +1,21 @@
+{
+	"name": "ts-adventofcode-2023",
+	"author": "zS1L3NT <zechariahtan144@gmail.com> (https://www.zectan.com)",
+	"description": "",
+	"license": "GPL-3.0",
+	"scripts": {
+		"start": "node --loader ts-node/esm --watch --no-warnings src/app.mts",
+		"lint": "tsc --noEmit && eslint src --fix && prettier src --write && rm tsconfig.tsbuildinfo"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "latest",
+		"@typescript-eslint/parser": "latest",
+		"bun-types": "^1.0.14",
+		"eslint": "latest",
+		"eslint-config-prettier": "latest",
+		"eslint-plugin-simple-import-sort": "latest",
+		"prettier": "latest",
+		"ts-node": "latest",
+		"typescript": "latest"
+	}
+}
