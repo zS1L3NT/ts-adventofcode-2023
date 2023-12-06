@@ -1,11 +1,8 @@
-import { readFileSync } from "fs"
-import { resolve } from "path"
-
-const input = readFileSync(resolve("src/day-1/actual.txt"), "utf-8").split("\n")
+import file from "../file"
 
 let sum = 0
 
-for (const n of input) {
+for (const n of file("actual")) {
 	let digits = ""
 	for (let i = 0; i < n.length; i++) {
 		if (!isNaN(+n[i]!)) {

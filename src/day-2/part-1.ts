@@ -1,12 +1,9 @@
-import { readFileSync } from "fs"
-import { resolve } from "path"
-
-const input = readFileSync(resolve("src/day-2/actual.txt"), "utf-8").split("\n")
+import file from "../file"
 
 let indexes = 0
 
 let i = 0
-for (const n of input) {
+for (const n of file("actual")) {
 	let possible = true
 
 	for (const game of n

@@ -1,11 +1,8 @@
-import { readFileSync } from "fs"
-import { resolve } from "path"
-
-const input = readFileSync(resolve("src/day-4/actual.txt"), "utf-8").split("\n")
+import file from "../file"
 
 let sum = 0
 
-for (const n of input) {
+for (const n of file("actual")) {
 	const [winners, hand] = n
 		.split(":")[1]!
 		.split("|")

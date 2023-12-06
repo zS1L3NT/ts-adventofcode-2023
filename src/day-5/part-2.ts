@@ -1,7 +1,6 @@
-import { readFileSync } from "fs"
-import { resolve } from "path"
+import file from "../file"
 
-const input = readFileSync(resolve("src/day-5/actual.txt"), "utf-8").split("\n")
+const input = file("actual")
 
 const numbers = input
 	.shift()!
